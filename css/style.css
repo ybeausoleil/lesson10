@@ -1,0 +1,27 @@
+*{
+	font-family:"helvetica";
+	color:#565656;
+}
+img[alt]{
+	border:1px solid black;
+}
+li a{
+	font-weight:bold;
+}
+/* style all absolute links */
+a[href^="http"]{
+	background-color:lightyellow;
+}
+/* 
+style secure protocol absolute links 
+with a padlock icon
+*/
+a[href^="https"]{	
+	background-image:url("../images/secure.gif");
+	background-repeat:no-repeat;
+	padding-left:25px;
+}
+/* target all a tags with 'bcit' in the href URL*/
+a[href*="bcit"]:after{
+	content: " (BCIT resource)";
+}
